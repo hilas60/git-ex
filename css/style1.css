@@ -1,0 +1,389 @@
+/*---- Fonts ---*/
+
+@font-face {
+    font-family: lato;
+    src: url('../fonts/Lato-Regular.ttf');
+}
+
+@font-face {
+    font-family: eurofurence;
+    src: url('../fonts/eurof35.ttf');
+}
+
+/*---- BASE ----*/
+
+* {
+    box-sizing: border-box;
+}
+
+/* html {
+    line-height: 1.25rem;
+    color: #606060;
+} */
+
+body {
+    font-family: lato, sans-serif;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+.main-grid-container{
+    display: grid;
+    grid-template-rows: 8.125rem 23.125rem auto 18.75rem;
+}
+
+.main-header {
+    align-items: center;
+    max-width: 100%;
+    background-color: #292929;
+    color: #ffffff;
+    grid-row: 1;
+    display: flex;
+    flex-direction: row;
+}
+/*--- Logo ---*/
+
+.logo {
+    height: 2rem;
+    font-size: 2.5rem;
+    font-family: 'eurofurence', sans-serif;
+    padding-left: 80px;
+}
+
+.logo span {
+    color: #58c93a;
+}
+
+/*--- Nav Bar ---*/
+
+.nav-btn {
+    display: none;
+    background-color: #292929;
+    border: 0px;
+}
+
+.main-nav {
+    margin: 0;
+    padding-right: 80px;
+
+}
+
+.main-nav a {
+    height: 130px;
+    width: 130px;
+    display: block;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 130px;
+    text-align: center;
+    border-right: 1px solid #1e1e1e;
+}
+
+.main-nav a:first-child {
+    border-left: 1px solid #1e1e1e;
+}
+
+.main-nav a:hover {
+    color: #58c93a;
+    box-shadow: -1px 0 0 #1d1d1d, inset 0 -6px 0 #58c93a;
+}
+.main-nav a:active {
+    color: #58c93a;
+    box-shadow: -1px 0 0 #1d1d1d, inset 0 -6px 0 #58c93a;
+}
+
+/*---- Hero ----*/
+
+.hero {
+    max-width: 1500px;
+    background-image: url('../img/Kayaking.png');
+    text-align: center;
+    background-position-x: center;
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: lato, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: -0.22px;
+}
+
+/*---- content -----*/
+
+/* main {
+} */
+
+.content-container {
+    max-width: 740px;
+    margin: 0 auto;
+    /* padding: 0 20px; */
+    border: 1px solid #e1e0e0;
+    border-bottom: 0px;
+}
+
+h2 {
+    margin: 0;
+    max-width: 300px;
+    color: #4f4e4e;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+    letter-spacing: 0.84px;
+}
+
+.txt {
+    padding: 0 20px;
+    columns: 2;
+    column-width: 330px;
+    margin: 50px 0;
+    font-family: lato, sans-serif;
+    color: #606060;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.48px;
+    overflow-wrap: break-word;
+    
+}
+
+
+.img-container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-rows: 380px 300px;
+    grid-template-columns: 460px 220px;
+    padding: 0 20px;
+    
+}
+
+.card1 {
+    background-image: url('../img/england-trees.png');
+    width: 460px;
+    height: 380px;
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.card2 {
+    background-image: url('../img/wheat.png');
+    width: 220px;
+    height: 380px;
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.card3 {
+    background-image: url('../img/view.png');
+    width: 700px;
+    height: 300px;
+    grid-row: 2;
+
+}
+
+
+button {
+    font-family: lato, sans-serif;
+    font-size: 1rem;
+}
+
+.btn {
+    border: #c2c2c2 solid 2px;
+    color: #c2c1c1;
+    font-weight: bold;
+    letter-spacing:  0.48px;
+}
+
+.round-btn {
+    border-radius: 1000px;
+    padding: 0 1.5em;
+    line-height: 2em;
+    transition: padding .3s;
+}
+
+.btn.round-btn:hover{
+    border: #58c93a solid 2px;
+    color: #58c93a;
+    padding-right: 2.8em;
+}
+.btn.round-btn:hover::after{
+    content: '→';
+    padding: 0 0 0 10px;
+    right: 1.5em;
+}
+
+.social-logo-container {
+    justify-content: center;
+}
+
+.social-logo {
+    background-color: #e5e5e598;
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: 2.25rem 10px;  
+}
+
+.fb-logo{
+    width: 8px;
+    height: 14px;
+    margin: 13px 16px;
+}
+
+.fb:hover {
+    background-color: #4267b2;
+}
+
+.twitter-logo {
+    width: 16px;
+    height: 12px;
+    margin: 14px 12px;
+}
+
+.twitter:hover {
+    background-color: #1da1f2;
+}
+
+.be-logo {
+    width: 16px;
+    height: 10px;
+    margin: 14px 12px;
+}
+
+.be:hover {
+    background-color: #0057ff;
+}
+
+.dribbble-logo {
+    width: 14px;
+    height: 14px;
+    margin: 13px;
+}
+
+.dribbble:hover {
+    background-color: #ea4c89;
+}
+
+.page-turner {
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.125rem;
+    color: #818181;
+    font-weight: bold;
+    letter-spacing: 0.9px;
+    border-top: 1px #e1e0e0 solid;
+
+}
+
+.turner {
+    margin: auto 0;
+    color: #818181;
+}
+
+.prev {
+    text-transform: uppercase;
+}
+.next {
+    text-transform: uppercase;
+}
+
+.prev::before {
+    content: '←';
+    padding-right: 10px;
+}
+
+.next::after {
+    content: '→';
+    padding-left: 10px;
+}
+
+
+/*---- footer ----*/
+
+.footer-container {
+    padding-top: 5rem;
+    width: 100%;
+    background-color: #f8f8f8;
+    border-top: #e1e0e0 1px solid;
+}
+
+footer .logo {
+    color: #292929;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+footer {
+    height: 20rem;
+    text-align: center;
+    color: #a6a6a6;
+    font-size: 0.8125rem;
+    line-height: 1.25rem;
+    letter-spacing: 0.39px;
+}
+
+/*---- helpers -----*/
+
+.flex {
+    display: flex;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.clear-list {
+    list-style: none;
+}
+
+.grid {
+    display: grid;
+}
+
+
+@media (max-width: 991px){
+    .nav-container {
+        position: relative;
+        height: 130px;
+        display: flex;
+        justify-content: center;
+        margin: 60px;
+    }
+    
+    .nav-btn {
+        display: block;
+        color: white;
+        font-size: 25px;
+    }
+    
+    .main-nav {
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        border: 1px solid lightgray;
+        padding: 0;
+        z-index: 1;
+        top: 130px;
+        right: -45px;
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    .main-nav a {
+        color: black;
+    }
+
+    .open {
+        display: block;
+    }
+}

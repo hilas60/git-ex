@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style1.css">
+        <title>Grid-Pixel-Perfect</title>
+    </head>
+
+    <body>
+        <div class="main-grid-container">
+            <header class="main-header flex space-between">
+                <div class="logo">Blogin<span>.</span></div>
+                <div class="nav-container">
+                    <button class="nav-btn" onclick="toggleNav()">☰</button>
+                    <ul class="main-nav flex space-between clear-list">
+                        <li><a href="#">Journal</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Work</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </header>
+            <div class="hero flex">
+                <h1>PSD TO HTML GRID EX!</h1>
+            </div>
+            <main>
+                <div class="content-container">
+                    <div class="txt">
+                        <h2>Duis aute irure dolor in henderit in voluptate.</h2>
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                            ea commo
+                            doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </br>
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur.
+                            </br>
+                            </br>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore
+                            et dolore magna aliqua. Ut Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris
+                            nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id
+                            est
+                            laborum.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur.
+                            </br>
+                            </br>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                            nisi ut
+                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                            esse cillum
+                            dolore eu fugiat nulla pariatur. Excepteur sint occaecat...</p>
+                        <button class="btn round-btn">Continue Reading</button>
+                    </div>
+                    <div class="img-container">
+                        <div class="card1 card"></div>
+                        <div class="card2 card"></div>
+                        <div class="card3 card"></div>
+                    </div>
+                    <section class="social-logo-container flex flex-centerx align-center">
+                        <a href="#" class="social-logo fb"><img class="fb-logo" src="img/Facebook-Logo.png"
+                                alt="facebook-logo"></a>
+                        <a href="#" class="social-logo twitter"><img class="twitter-logo" src="img/Twitter-Logo.png"
+                                alt="twitter-logo"></a>
+                        <a href="#" class="social-logo be"><img class="be-logo" src="img/Behanced-Logo.png"
+                                alt="behance-logo"></a>
+                        <div><a href="#" class="social-logo dribbble"><img class="dribbble-logo" src="img/Dribbble-Logo.png"
+                                alt="dribbble-logo"></a></div>
+                    </section>
+                    <div class="page-turner flex space-between">
+                        <a class="prev turner" href="#">Previous</a>
+                        <a class="next turner" href="#">Next</a>
+                    </div>
+                </div>
+            </main>
+            <footer class="footer-container">
+                <div class="logo">Blogin<span>.</span></div>
+                <small>© 2014 Blogin.com - All Rights Reserved - Find more free Templates at
+                    <strong>Pixelhint.com</strong></small>
+            </footer>
+        </div>
+        <script>
+            function toggleNav(){
+                var elNavBar = document.querySelector(".main-nav")
+                elNavBar.classList.toggle("open");
+            }
+        </script>
+    </body>
+
+</html>
